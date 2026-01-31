@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "com.jotech.academy_chat_qol.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [],
+	"client": [
+	    "ChatHudMixin"
+	  ],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

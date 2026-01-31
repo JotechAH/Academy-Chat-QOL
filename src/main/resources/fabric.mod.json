@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "academy-chat-qol",
+	"version": "${version}",
+	"name": "Academy Chat QOL",
+	"description": "A client-side chat mod for the Cobblemon Academy 2.0 server",
+	"authors": [
+		"Jotech"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/academy-chat-qol/icon.png",
+	"environment": "*",
+	"entrypoints": {
+    	"client": [
+	      "com.jotech.academy_chat_qol.AcademyChatQOL"
+	    ]
+	  },
+	  "mixins": [
+	    "academy-chat-qol.mixins.json"
+	  ],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
