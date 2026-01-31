@@ -148,6 +148,8 @@ Ignore a player's messages.
 ```
 /acq ignore AnnoyingPlayer
 ```
+- **Note**: Any message containing this username will not be displayed, even if it wasn’t sent by that player.
+
 
 ### `/acq unignore <player>`
 Stop ignoring a player.
