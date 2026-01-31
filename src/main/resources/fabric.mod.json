@@ -8,8 +8,7 @@
 		"Jotech"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/JotechAH/Academy-Chat-QOL"
 	},
 	"license": "MIT",
 	"icon": "assets/academy-chat-qol/icon.png",
