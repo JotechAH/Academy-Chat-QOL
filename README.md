@@ -21,7 +21,7 @@ This mod is not affiliated with or endorsed by the Cobblemon Academy 2.0 modpack
 
 ---
 
----
+
 ## Table of Contents
 
 - [Features](#-features)
@@ -33,7 +33,6 @@ This mod is not affiliated with or endorsed by the Cobblemon Academy 2.0 modpack
 - [Contributing](#-contributing)
 - [License](#-license)
 
----
 
 ## ✨ Features
 
