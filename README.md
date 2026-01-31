@@ -5,7 +5,6 @@
 ![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-green.svg)
 ![Fabric](https://img.shields.io/badge/Fabric-0.18.1-orange.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Downloads](https://img.shields.io/github/downloads/JotechAH/academy-chat-qol/total)
 
 **A client-side Fabric mod that enhances your Minecraft chat experience with customizable formatting, player mentions, and ignore functionality.**
 
