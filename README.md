@@ -15,6 +15,10 @@
 
 ---
 
+## Disclaimer
+
+This mod is not affiliated with or endorsed by the Cobblemon Academy 2.0 modpack team. It was created independently for personal use and shared with the community. For any issues or questions regarding this mod, please use this GitHub repository's issue tracker.
+
 ## Table of Contents
 
 - [Features](#-features)
