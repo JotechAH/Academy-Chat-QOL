@@ -254,6 +254,5 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 ## Support
 
 - **Issues**: [GitHub Issues](https://github.com/JotechAH/academy-chat-qol/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/JotechAH/academy-chat-qol/discussions)
 
 ---
