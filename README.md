@@ -213,6 +213,9 @@ Display current configuration status.
 - The player typed your exact username (case doesn't matter)
 - Sound is enabled in Minecraft settings
 
+### Q: Why do we have to use /acq ignore <player> to ignore someone instead of /ignore <player>?
+**A:** I initially planned to use /ignore <player>, but then I realized that if the staff ever adds an official /ignore command, it could conflict with the mod’s command.
+
 ---
 
 ## Contributing
