@@ -23,14 +23,13 @@ This mod is not affiliated with or endorsed by the Cobblemon Academy 2.0 modpack
 
 ## Table of Contents
 
-- [Features](#-features)
-- [Installation](#-installation)
-- [Configuration](#-configuration)
-- [Commands](#-commands)
-- [Examples](#-examples)
-- [FAQ](#-faq)
-- [Contributing](#-contributing)
-- [License](#-license)
+- [Features](#-Features)
+- [Installation](#Installation)
+- [Configuration](#Configuration)
+- [Commands](#Commands)
+- [FAQ](#FAQ)
+- [Contributing](#Contributing)
+- [License](#License)
 
 
 ## ✨ Features
