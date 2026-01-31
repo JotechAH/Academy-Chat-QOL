@@ -241,7 +241,7 @@ Open an issue with the `enhancement` label and describe:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/JotechAH/academy-chat-qol/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://raw.githubusercontent.com/JotechAH/Academy-Chat-QOL/refs/heads/main/LICENSE) file for details.
 
 ---
 
