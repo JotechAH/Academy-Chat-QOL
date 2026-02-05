@@ -117,8 +117,6 @@ public class ConfirmationOverlay {
     public boolean handleClick(int screenWidth, int screenHeight, int mouseX, int mouseY, float scale) {
         if (!visible) return false;
         
-        MinecraftClient client = MinecraftClient.getInstance();
-        
         int scaledMouseX = (int)(mouseX / scale);
         int scaledMouseY = (int)(mouseY / scale);
         

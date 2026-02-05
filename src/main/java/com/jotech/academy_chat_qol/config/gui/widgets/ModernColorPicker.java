@@ -388,33 +388,6 @@ public class ModernColorPicker extends ClickableWidget {
         return rgb & 0xFFFFFF;
     }
     
-    private String[] wrapText(net.minecraft.client.font.TextRenderer renderer, String text, int maxWidth) {
-        java.util.List<String> lines = new java.util.ArrayList<>();
-        StringBuilder currentLine = new StringBuilder();
-        String[] words = text.split(" ");
-        
-        for (String word : words) {
-            String testLine = currentLine.length() == 0 ? word : currentLine + " " + word;
-            if (renderer.getWidth(testLine) <= maxWidth) {
-                if (currentLine.length() > 0) currentLine.append(" ");
-                currentLine.append(word);
-            } else {
-                if (currentLine.length() > 0) {
-                    lines.add(currentLine.toString());
-                    currentLine = new StringBuilder(word);
-                } else {
-                    lines.add(word);
-                }
-            }
-        }
-        
-        if (currentLine.length() > 0) {
-            lines.add(currentLine.toString());
-        }
-        
-        return lines.toArray(new String[0]);
-    }
-    
     public int getSelectedColor() {
         return hsbToRgb(hue, saturation, brightness);
     }
