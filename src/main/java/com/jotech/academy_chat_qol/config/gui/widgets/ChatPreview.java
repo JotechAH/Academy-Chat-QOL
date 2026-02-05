@@ -67,7 +67,7 @@ public class ChatPreview extends ClickableWidget {
     
     private int countLines(MinecraftClient client, int maxWidth, String message) {
         String formatted = chatFormat
-            .replace("{rank}", "★")
+            .replace("{rank}", "一")
             .replace("{nickname}", "Player123")
             .replace("{message}", message);
         
@@ -92,7 +92,7 @@ public class ChatPreview extends ClickableWidget {
     
     private int drawFormattedMessage(DrawContext context, MinecraftClient client, int x, int y, int maxWidth, String message) {
         String formatted = chatFormat
-            .replace("{rank}", "★")
+            .replace("{rank}", "一")
             .replace("{nickname}", "Player123")
             .replace("{message}", message)
             .replace("&", "§");
