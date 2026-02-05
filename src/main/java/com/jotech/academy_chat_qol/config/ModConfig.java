@@ -6,13 +6,11 @@ public class ModConfig {
     public String mentionSound = "cobblemon:evolution.notification";
     public float mentionVolume = 1.0f;
     
+    public boolean disableMentions = false;
+    public boolean disableIgnore = true;
+    
     public String getChatDisplay() {
         return chatDisplay;
-    }
-    
-    public void setChatDisplay(String chatDisplay) {
-        this.chatDisplay = chatDisplay;
-        ConfigManager.save();
     }
     
     public String getMentionColor() {
@@ -27,7 +25,41 @@ public class ModConfig {
         return mentionVolume;
     }
     
-    public float getMentionPitch() {
-        return 1.0f;
+    public boolean isDisableMentions() {
+        return disableMentions;
+    }
+    
+    public boolean isDisableIgnore() {
+        return disableIgnore;
+    }
+    
+    public void setChatDisplay(String chatDisplay) {
+        this.chatDisplay = chatDisplay;
+        ConfigManager.save();
+    }
+    
+    public void setMentionColor(String mentionColor) {
+        this.mentionColor = mentionColor;
+        ConfigManager.save();
+    }
+    
+    public void setMentionSound(String mentionSound) {
+        this.mentionSound = mentionSound;
+        ConfigManager.save();
+    }
+    
+    public void setMentionVolume(float mentionVolume) {
+        this.mentionVolume = mentionVolume;
+        ConfigManager.save();
+    }
+    
+    public void setDisableMentions(boolean disableMentions) {
+        this.disableMentions = disableMentions;
+        ConfigManager.save();
+    }
+    
+    public void setDisableIgnore(boolean disableIgnore) {
+        this.disableIgnore = disableIgnore;
+        ConfigManager.save();
     }
 }

@@ -8,7 +8,9 @@
 		"Jotech"
 	],
 	"contact": {
-		"sources": "https://github.com/JotechAH/Academy-Chat-QOL"
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/academy-chat-qol",
+		"sources": "https://github.com/JotechAH/Academy-Chat-QOL",
+		"issues": "https://github.com/JotechAH/Academy-Chat-QOL/issues"
 	},
 	"license": "MIT",
 	"icon": "assets/academy-chat-qol/icon.png",

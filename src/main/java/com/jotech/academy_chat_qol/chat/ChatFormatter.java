@@ -146,11 +146,11 @@ public class ChatFormatter {
             String colorHex = ConfigManager.getConfig().getMentionColor().replace("#", "");
             int textColor = Integer.parseInt(colorHex, 16);
             
-            MutableText mentionText = Text.literal("@" + text);
+            MutableText mentionText = Text.literal(text);
             mentionText.setStyle(Style.EMPTY
                 .withColor(TextColor.fromRgb(textColor))
                 .withBold(true)
-                .withUnderline(true)
+                .withUnderline(false)
             );
             
             return mentionText;
@@ -168,7 +168,6 @@ public class ChatFormatter {
         try {
             String soundId = ConfigManager.getConfig().getMentionSound();
             float volume = ConfigManager.getConfig().getMentionVolume();
-            float pitch = ConfigManager.getConfig().getMentionPitch();
             
             String[] parts = soundId.split(":");
             if (parts.length != 2) {
@@ -178,7 +177,7 @@ public class ChatFormatter {
             net.minecraft.registry.Registries.SOUND_EVENT.getOrEmpty(
                 net.minecraft.util.Identifier.of(parts[0], parts[1])
             ).ifPresent(sound -> {
-                client.player.playSound(sound, volume, pitch);
+                client.player.playSound(sound, volume, 1.0f);
             });
         } catch (Exception e) {
         }

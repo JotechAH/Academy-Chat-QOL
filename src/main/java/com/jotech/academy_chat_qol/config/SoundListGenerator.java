@@ -1,7 +1,6 @@
 package com.jotech.academy_chat_qol.config;
 
 import net.minecraft.registry.Registries;
-import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 import net.fabricmc.loader.api.FabricLoader;
 

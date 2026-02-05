@@ -3,12 +3,6 @@ package com.jotech.academy_chat_qol.config;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.jotech.academy_chat_qol.AcademyChatQOL;
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.text.ClickEvent;
-import net.minecraft.text.HoverEvent;
-import net.minecraft.text.MutableText;
-import net.minecraft.text.Text;
-import net.minecraft.util.Formatting;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -19,8 +13,7 @@ import java.util.concurrent.CompletableFuture;
 public class UpdateChecker {
     
     private static final String GITHUB_API_URL = "https://api.github.com/repos/JotechAH/Academy-Chat-QOL/releases/latest";
-    private static final String CURSEFORGE_URL = "https://www.curseforge.com/minecraft/mc-mods/academy-chat-qol";
-    private static final String CURRENT_VERSION = "1.0.0";
+    private static final String CURRENT_VERSION = "0.1.0";
     
     private static boolean hasChecked = false;
     private static boolean updateAvailable = false;
@@ -91,46 +84,6 @@ public class UpdateChecker {
                 hasChecked = true;
             }
         });
-    }
-    
-    public static void notifyPlayer() {
-        if (!updateAvailable) {
-            return;
-        }
-        
-        MinecraftClient client = MinecraftClient.getInstance();
-        if (client.player == null) {
-            return;
-        }
-        
-        MutableText message = Text.literal("")
-            .append(Text.literal("═══════════════════════════════════════\n").formatted(Formatting.GRAY))
-            .append(Text.literal("Academy Chat QOL").formatted(Formatting.GOLD, Formatting.BOLD))
-            .append(Text.literal(" - Update Available!\n").formatted(Formatting.YELLOW))
-            .append(Text.literal("\n"))
-            .append(Text.literal("Current version: ").formatted(Formatting.GRAY))
-            .append(Text.literal(CURRENT_VERSION).formatted(Formatting.RED))
-            .append(Text.literal("\n"))
-            .append(Text.literal("Latest version: ").formatted(Formatting.GRAY))
-            .append(Text.literal(latestVersion).formatted(Formatting.GREEN))
-            .append(Text.literal("\n\n"));
-        
-        MutableText curseforgeLink = Text.literal("[Update via CurseForge]")
-            .formatted(Formatting.AQUA, Formatting.BOLD, Formatting.UNDERLINE)
-            .styled(style -> style
-                .withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, CURSEFORGE_URL))
-                .withHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, 
-                    Text.literal("Click to open CurseForge page\n")
-                        .formatted(Formatting.YELLOW)
-                        .append(Text.literal("Use the 'Update' button in your modpack").formatted(Formatting.GRAY))
-                ))
-            );
-        
-        message.append(curseforgeLink);
-        message.append(Text.literal("\n"));
-        message.append(Text.literal("═══════════════════════════════════════").formatted(Formatting.GRAY));
-        
-        client.player.sendMessage(message, false);
     }
     
     private static boolean isNewerVersion(String newVersion, String currentVersion) {
